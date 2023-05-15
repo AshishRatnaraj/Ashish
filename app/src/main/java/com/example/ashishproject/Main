@@ -1,0 +1,249 @@
+val x = 5
+        val y = 7
+        val z = 10
+        val pi = 3.14159
+        val radius = 4
+
+        val add = x+y+z
+        val divide = z/y
+        val circleArea = 4*4*pi
+        val circleArea2 = x*x*pi
+
+        Log.i("DEMO""$add")
+        Log.i("DEMO""$divide")
+        Log.i("DEMO""$circleArea")
+        Log.i("DEMO""$circleArea2")
+        val lowerLetter ="a"
+        val upperLetter ="A"val number = '3'
+        val space = ' '
+        val newLine ='\n'
+        val tab ='\t'
+        val backspace ='\b'
+        val carriageReturn ='\r'
+        val singleQuote = '\''
+        val doubleQuote = '"'
+        val backslash = '\\'
+        val symbol = '$'
+
+
+
+
+
+        val TAG ="DEMO"
+
+            val numbers = arrayOf(
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+            2,
+                10,
+            )
+        for ( number in numbers){
+        }
+        val numbers2 = mutableListOf(
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+        )
+                    numbers2.remove(7)
+                    numbers2.remove(8)
+                    numbers2.add(15)
+                    numbers2.add(16)
+        for ( number in numbers2){
+            Log.i(TAG,number.toString())
+        }
+    }
+       val TAG = "DEMO"
+
+        val movies = mutableListOf(
+            "Spiderman",
+            "Superman",
+            "DoctorStrange",
+            "Fast and Furious",
+            "Jumanji",
+        )
+
+        val movies2 = mutableListOf(
+            "BlackWidow",
+            "Batman",
+            "Ironman",
+        )
+
+        movies2.add("Thor")
+        movies.remove("Superman")
+        movies.addAll(listOf("Spiderman", "Superman", "DoctorStrange", "Fast and Furious","Jumanji"))
+
+
+        Log.i("DEMO", "movies")
+        for (movie in movies) {
+            Log.i(TAG, movie)
+        }
+        for (movie in movies2) {
+            Log.i(TAG, movie)
+        }
+
+    }
+}
+
+
+
+fun exercise1(){
+    val TAG ="DEMO"
+
+    val numbers = mutableListOf(
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+    )
+        numbers.remove(8)
+        numbers.remove(10)
+        numbers.add(1)
+}
+
+     fun exercise2() {
+         val numbers = mutableListOf( 1,2,3,4,5,6,7,8,9,10)
+         for(item in numbers){
+             val condition = item>= 6
+             if (condition){
+                 Log.i("DEMO", item.toString())
+             } else{
+                 Log.i("DEMO","The number is less than 6")
+             }
+     }
+     fun day7Exercise(){
+         val x = 2
+         val y = 3
+         val z = 7
+
+         Log.i("DEMO","$x,$y and $z")
+
+         val c1 = "Dehradun"
+         val c2 = "Delhi"
+         val c3 = "Chennai"
+
+         Log.i("DEMO","$c1,$c2 and $c3")
+
+         val sum = x+y
+         val condition1 = sum>z
+         if (condition1) {
+             val message ="sum of x and y > z"
+
+              Log.i("DEMO","$message")
+          }else{
+              Log.i("DEMO","x+y<=z")
+          }
+          val cities = listOf("Dehradun","Delhi","Chennai")
+          for(city in cities) {
+          Log.i("DEMO","$city")
+          }
+val x = 4
+                val y = 5
+                val z = 6
+
+                val a = 11
+                val b = 12
+                val c = 13
+
+               val condition= b=z
+               if(condition){
+                   Log.i("DEMO","b=z")}
+                  val condition1 = c>x,y and z
+                    if(condition1){
+                        Log.i("DEMO","c > x,y and z")}
+                  val condition2 = a<x+z
+                     if(condition2) {
+                         val message = "a<x+z"
+                         Log.i("DEMO", "$message")
+                     }else{
+                         Log.i("DEMO","a>=x+y")
+                     }
+
+
+
+
+}
+
+}
+
+fun Day8Exercise(){
+    val tag = "DEMO"
+    val names = arrayOf("Spiderman", "Superman", "Batman")
+    var i = 0
+    while (i < names.size) {
+        Log.i(tag, names[i])
+        i++
+
+fun sum(num1:Int,num2:Int){
+    val add = num1+num2
+}
+
+fun getArea(side1:Int,side2:Int) {
+    val Area = side1*side2
+    Log.i("DEMO", Area.toString())
+}
+ val names = listOf("Ashish", "Abhinav", "Arpith", "Aakash")
+         val cities = listOf("Dehradun", "Delhi", "Chennai", "Mumbai", "Kolkata")
+         val movies = listOf("Spider-man", "Superman", "Batman", "Thor", "Dr.Strange")
+
+         val area = getCircleArea(1.0)
+         Log.i("DEMO","The area of the circle \nwith a 1.0 radius is $area")
+         val area1 = getCircleArea(3.6)
+         Log.i("DEMO","The area of the circle \nwith a 3.6 radius is $area")
+         val area2 = getCircleArea(10)
+         Log.i("DEMO","The area of the circle \nwith a 10 radius is $area")
+
+         printList(names)
+         printList(cities)
+         printList(movies)
+
+
+
+     }
+     fun printList(list: List<String>) {
+         for (item in list) {
+             Log.i("Demo",item)
+         }
+     }
+       val x = 1.0
+       val y = 3.6
+       val z = 10
+       val pi =3.14159
+     fun getCircleArea (radius: Double):Double {
+         return pi * radius * radius
+         Log.i("Demo", return)
+     }
+
+ }
+
+ fun Day10Excercise()
+ {
+     val rectangle1 = Rectangle(2,3)
+     val rectangle2 = Rectangle(4,5)
+     rectangle1.Logside()
+     rectangle1.getArea()
+     rectangle2.Logside()
+     rectangle2.getArea()
+ }
+
+val user1= User("Ashish","ashish2001")
+        val user2= User("Tim""Tim1923")
+        val user3= User("Abhinav""Abhinav2005")
