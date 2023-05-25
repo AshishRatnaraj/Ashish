@@ -12,7 +12,14 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+      binding.btn.NextUser.setOnClickListener{
 
+          val User = User[i]
+          binding.tvUsername.text = User.size - 11
+          binding.tvEmail.text = User.size - 13
+          binding.tvPassword.text = User.size - 18
+      }
+      }
     }
 }
 
